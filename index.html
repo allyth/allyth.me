@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Maria Alexandra Theodorescu"
+---
+<div id="home-container">{% include side-menu.html %}</div>
+
+<script>
+    var links = document.querySelectorAll('a.menu-item').forEach(function(e) {
+        e.addEventListener('click', function (event) {
+            // Prevent default action (e.g. following the link)
+            event.preventDefault();
+
+            var homeContainer = document.querySelector("#home-container");
+            homeContainer.style.width = "450px";
+
+            // Get url from the target element (<a>) href attribute
+            var url = event.target.href;
+
+            // Open the url in the current window. Set to "_blank" instead of "_self" to open in a new window.
+            setTimeout(function() {
+                window.open(url, '_self');
+            }, 1000);
+        });
+    });
+</script>
