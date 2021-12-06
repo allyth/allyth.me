@@ -29,7 +29,7 @@ title: "Home"
 
             var homeContainer = document.querySelector("#home-container");
             // size of the left sidebar
-            homeContainer.style.width = "400px";
+            homeContainer.style.width = "350px";
 
             // Get url from the target element (<a>) href attribute
             var url = event.target.href;
@@ -37,7 +37,7 @@ title: "Home"
             // Open the url in the current window. Set to "_blank" instead of "_self" to open in a new window.
             setTimeout(function() {
                 window.open(url, '_self');
-            }, 1000);
+            }, 500);
         });
     });
 </script>

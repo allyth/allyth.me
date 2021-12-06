@@ -4,7 +4,7 @@ $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-seri
 
 body, html {
   // background: $backgroundColor;
-  background-color: #000000;
+  background-color: #a9a9a9;
   color: $bodyColor;
   height: 100%;
   font-family: $bodyFont;
@@ -66,7 +66,7 @@ h1, h2 {
   justify-content: center;
   height: 100%;
   width: 100%;
-  transition: width 1s linear;
+  transition: width 0.5s linear;
 }
 
 // .side-menu-expanded {
@@ -84,12 +84,12 @@ h1, h2 {
   background-position: 51%;
   display: flex;
   flex-direction: column;
-  flex: 0 0 400px;
+  flex: 0 0 350px;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow-y: auto;
-  transition: width 1s linear;
+  transition: width 0.5s linear;
 }
 
 .side-menu {
