@@ -15,7 +15,7 @@ title: "Visual Arts"
 
            
            
-            {% assign visual_arts = site.visual_arts %}
+            {% assign visual_arts = site.visual_arts | sort: 'date' | reverse %}
 
             <h2>Photography</h2>
             <ul class="gallery"> 
