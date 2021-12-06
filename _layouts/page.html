@@ -1,12 +1,65 @@
 ---
 layout: default
 ---
-
 <div id="main">
-  <div id="left-sidebar">
+  <div id="left-sidebar" class="d-none d-md-block">
     {% include side-menu.html %}
   </div>
-  <div id="page-content">
-    {{content}}
+  <div id="page-content-container">
+    <nav class="navbar navbar-dark navbar-mobile d-md-none" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-mobile-links">
+              <span class="navbar-toggler-icon"> </span>
+          </button>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-mobile-links">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="visual-arts.html">Visual Arts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-content">{{content}}</div>
   </div>
 </div>
+
+
+
+<!-- <script>
+  var links = document.querySelectorAll('a#name').forEach(function(e) {
+      e.addEventListener('click', function (event) {
+          // Prevent default action (e.g. following the link)
+          event.preventDefault();
+
+          var div = document.createElement("div");
+          div.style.position = "absolute";
+          div.style.top = "0px";
+          div.style.bottom = "0px";
+          div.style.left = "0px";
+          div.style.right = "0px";
+          div.style.backgroundColor = "#FBF7F4";
+          div.style.opacity = "0";
+          div.style.transition = "opacity 0.3s linear";
+          document.body.appendChild(div);
+          setTimeout(function() {
+            div.style.opacity = "1";
+          }, 0);
+
+          // Get url from the target element (<a>) href attribute
+          var url = event.target.href;
+
+          // Open the url in the current window. Set to "_blank" instead of "_self" to open in a new window.
+          setTimeout(function() {
+              window.open(url, '_self');
+          }, 1200);
+      });
+  });
+</script> -->

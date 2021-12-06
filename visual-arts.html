@@ -6,9 +6,59 @@ title: "Visual Arts"
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Visual Arts</h1>
+            <h1>
+                <span class="ap-highlight-pink">Visual Arts</span>
+            </h1>
             
-            <p>Hi</p>
+            <p>Just like computer science, art has always been a huge part of my life growing up, and it holds a special place in my heart.</p>
+
+           
+           
+            {% assign visual_arts = site.visual_arts %}
+
+            <h2>Photography</h2>
+            <ul class="gallery"> 
+                {% for post in visual_arts %}
+                    {% if post.isPhoto %}
+                        <li>
+                            <a href="{{ post.image }}" data-toggle="lightbox"> 
+                                <img src="{{ post.image }}" class="img-fluid">
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
+
+            <h2>Paintings/Drawings</h2>
+            <ul class="gallery">
+                {% for post in visual_arts %}
+                    {% if post.isDrawing %}
+                        <li>
+                            <a href="{{ post.image }}" data-toggle="lightbox">
+                                <img src="{{ post.image }}" class="img-fluid">
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         </div>
+    </div>
+    <h2>Videos</h2>
+    <p>(created and edited by me)</p>
+    <div class="row">   
+            <div class="col-md-6 ">
+                <div class="videoWrapper-16-9"><iframe width="560" height="315" src="https://www.youtube.com/embed/WZtbk0X-VM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 ">
+                <div class="videoWrapper-16-9"><iframe width="560" height="315" src="https://www.youtube.com/embed/LqMalt72bg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="videoWrapper-16-9"><iframe width="560" height="315" src="https://www.youtube.com/embed/-FREtuaJ5OQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
     </div>
 </div>

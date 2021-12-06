@@ -1,3 +1,9 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "Maria Alexandra Theodorescu" # the name of your site, e.g. ACME Corp.
+url: "" 
+baseurl: "" 
+title: "Maria Alexandra Theodorescu" 
+
+collections:
+  posts:
+    output: false
+  visual_arts:
+    output: false
