@@ -17,7 +17,7 @@ title: "Visual Arts"
            
             {% assign visual_arts = site.visual_arts | sort: 'date' | reverse %}
 
-            <h2>Photography</h2>
+            <h2>Photography (2015-present)</h2>
             <ul class="gallery"> 
                 {% for post in visual_arts %}
                     {% if post.isPhoto %}
@@ -30,7 +30,7 @@ title: "Visual Arts"
                 {% endfor %}
             </ul> 
 
-            <h2>Paintings/Drawings</h2>
+            <h2>Paintings/Drawings (2015-2019)</h2>
             <ul class="gallery">
                 {% for post in visual_arts %}
                     {% if post.isDrawing %}
@@ -44,7 +44,7 @@ title: "Visual Arts"
             </ul>
         </div>
     </div>
-    <h2>Videos</h2>
+    <h2>Videos (2019-present)</h2>
     <p>(created and edited by me)</p>
     <div class="row">   
             <div class="col-md-6 ">
