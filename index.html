@@ -5,21 +5,6 @@ title: "Home"
 <div id="home-container">{% include side-menu.html %}</div>
 
 <script>
-    // Alternate the height of home container between 100% 
-    // and the height of the side menu to ensure the background image
-    // covers the full height of the window.
-    $(window).resize(function() {
-        if ($(".side-menu").height() < $(window).height()) {
-        $("#home-container").css("height", "100%");
-        console.log('100%');
-        } else {
-        $("#home-container").css("height", $(".side-menu").height());
-        console.log($(".side-menu").height());
-        }
-    });
-</script>
-
-<script>
     // Perform slide animation of window contents towards the left side of the window
     var links = document.querySelectorAll('a.menu-item').forEach(function(e) {
         e.addEventListener('click', function (event) {

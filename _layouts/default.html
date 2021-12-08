@@ -23,6 +23,29 @@
       });
     </script>
 
+    <script>
+      // Alternate the height of home container between 100% 
+      // and the height of the side menu to ensure the background image
+      // covers the full height of the window.
+      function resizeMenuContainer() {
+          if ($(".side-menu").height() < $(window).height()) {
+            $("#home-container").css("justify-content", "center");
+            $("#home-container").css("height", "100%");
+            $("#left-sidebar").css("justify-content", "center");
+            // console.log('100%');
+          } else {
+            $("#home-container").css("justify-content", "start");
+            $("#home-container").css("height", $(".side-menu").height());
+            $("#left-sidebar").css("justify-content", "start");
+            // console.log($(".side-menu").height());
+          }
+      }
+
+      resizeMenuContainer();
+      // $(document).ready(resizeMenuContainer);
+      $(window).resize(resizeMenuContainer);
+  </script>
+  
     {% include analytics.html %}
   </body>
 </html>
