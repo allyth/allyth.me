@@ -14,7 +14,6 @@ title: "Visual Arts"
             <p>Just like computer science, art has always been a huge part of my life growing up, and it holds a special place in my heart.</p>
 
            
-           
             {% assign visual_arts = site.visual_arts | sort: 'date' | reverse %}
 
             <h2>Photography (2015-present)</h2>
@@ -22,7 +21,7 @@ title: "Visual Arts"
                 {% for post in visual_arts %}
                     {% if post.isPhoto %}
                         <li>
-                            <a href="{{ post.image }}" data-toggle="lightbox"> 
+                            <a href="{{ post.image }}" data-gallery="photography" data-toggle="lightbox"> 
                                 <img src="{{ post.image }}" class="img-fluid">
                             </a>
                         </li>
@@ -35,7 +34,7 @@ title: "Visual Arts"
                 {% for post in visual_arts %}
                     {% if post.isDrawing %}
                         <li>
-                            <a href="{{ post.image }}" data-toggle="lightbox">
+                            <a href="{{ post.image }}" data-gallery="drawings" data-toggle="lightbox">
                                 <img src="{{ post.image }}" class="img-fluid">
                             </a>
                         </li>
