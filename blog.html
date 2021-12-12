@@ -16,7 +16,7 @@ title: "Blog"
             {% assign posts = site.posts | sort: 'date' | reverse %}
             {% for post in posts %}
             <h2>{{ post.title }}</h2>
-            <p class="text-muted mb-2 mt-2">{{ post.date | date: "%B %e, %Y" }}</p>
+            <p class="text-muted mb-2 mt-n2"> <i class="far fa-calendar mr-1"></i> {{ post.date | date: "%B %e, %Y" }}</p>
         
             {{ post.content }}
             <div class="dots" style="justify-content: center;">

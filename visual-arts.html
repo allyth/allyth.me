@@ -16,7 +16,8 @@ title: "Visual Arts"
            
             {% assign visual_arts = site.visual_arts | sort: 'date' | reverse %}
 
-            <h2>Photography (2015-present)</h2>
+            <h2 class="photo">Photography</h2>
+            <p class="text-muted mt-n2"><i class="fas fa-info-circle"></i> 2015-present</p>
             <ul class="gallery"> 
                 {% for post in visual_arts %}
                     {% if post.isPhoto %}
@@ -29,7 +30,8 @@ title: "Visual Arts"
                 {% endfor %}
             </ul> 
 
-            <h2>Paintings/Drawings (2015-2019)</h2>
+            <h2 class="painting">Paintings/Drawings</h2>
+            <p class="text-muted mt-n2"><i class="fas fa-info-circle"></i> 2015-2019</p>
             <ul class="gallery">
                 {% for post in visual_arts %}
                     {% if post.isDrawing %}
@@ -43,8 +45,8 @@ title: "Visual Arts"
             </ul>
         </div>
     </div>
-    <h2>Videos (2019-present)</h2>
-    <p>(created and edited by me)</p>
+    <h2 class="video">Videos</h2>
+    <p class="text-muted mt-n2"><i class="fas fa-info-circle"></i> Created and edited by me, 2019-present</p>
     <div class="row">   
             <div class="col-md-6 ">
                 <div class="videoWrapper-16-9"><iframe width="560" height="315" src="https://www.youtube.com/embed/WZtbk0X-VM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

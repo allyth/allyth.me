@@ -20,6 +20,24 @@ h1, h2 {
   color: #6B0F1A;
 }
 
+h2.photo::before {
+  font-family: FontAwesome;
+  content: "\f083";
+  margin-right: 0.7rem;
+}
+
+h2.painting::before {
+  font-family: FontAwesome;
+  content: "\f53f";
+  margin-right: 0.7rem;
+}
+
+h2.video::before {
+  font-family: FontAwesome;
+  content: "\f008";
+  margin-right: 0.7rem;
+}
+
 .side-menu .icons a{
   color:$backgroundColor;
   font-size: 30px;
@@ -196,6 +214,10 @@ span.ap-highlight-pink {
 
 .gallery img:hover {
   opacity: 0.7;
+}
+
+.ekko-lightbox .modal-body {
+  padding: 4px;
 }
 
 .videoWrapper-16-9 {
