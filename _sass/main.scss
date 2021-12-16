@@ -45,6 +45,11 @@ h2.video::before {
   margin-right: 5px;
 }
 
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #f00; /* Red */
+}
+
 .navbar-mobile {
   background-color: hsl(8, 60%, 73%);
   position: sticky;

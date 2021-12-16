@@ -10,11 +10,19 @@
     <div class="divider"></div>
 
     <div class="icons">
-        <a title="LinkedIn" href="https://www.linkedin.com/in/alexandra-theodorescu" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a title="Github" href="https://github.com/allyth" target="_blank"><i class="fab fa-github"></i></a>
-        <a title="Resume" href="/assets/documents/resume.pdf" target="_blank"><i class="fas fa-address-card"></i></a>
-        <a title="Contact Page" href="/contact" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a data-content="LinkedIn" data-placement="top" href="https://www.linkedin.com/in/alexandra-theodorescu" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a data-content="Github" data-placement="top" href="https://github.com/allyth" target="_blank"><i class="fab fa-github"></i></a>
+        <a data-content="Resume" data-placement="top" href="/assets/documents/resume.pdf" target="_blank"><i class="fas fa-address-card"></i></a>
+        <a data-content="Contact Page" data-placement="top"href="/contact" target="_blank"><i class="fas fa-envelope"></i></a>
     </div>
+
+    <script>
+        $(function () {
+            $('div.icons a').popover({
+                trigger: 'hover focus'
+            })
+        })
+    </script>
 
     <div class="dots">
         <div class="divider circle"></div>
