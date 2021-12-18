@@ -1,6 +1,9 @@
 $backgroundColor: #FBF7F4;
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+@font-face { font-family: Barcelony; src: url('/assets/fonts/barcelony/Barcelony.ttf'); } 
+@font-face { font-family: 'Roboto Light'; src: url('/assets/fonts/roboto/RobotoCondensed-Light.ttf'); } 
+@font-face { font-family: 'Roboto Regular'; src: url('/assets/fonts/roboto/RobotoCondensed-Regular.ttf'); } 
 
 body, html {
   background-color: $backgroundColor;
@@ -16,8 +19,9 @@ body, html {
 
 h1, h2 {
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   color: #6B0F1A;
+  font-family: 'Roboto Regular';
 }
 
 h2.photo::before {
@@ -135,18 +139,19 @@ a, a:hover, a:visited{
 }
 
 #name {
+  font-family: 'Barcelony';
   font-size: 30px;
-  line-height: 1.1em;
+  line-height: 1.4em;
   color: #ffffff;
   margin-top: 15px;
 }
 
 .divider {
   background-color: #E8998D;
-  height: 5px;
+  height: 2px;
   width: 200px;
   border-radius: 100px;
-  margin: 30px;
+  margin: 20px;
 }
 
 .dots {
@@ -161,8 +166,15 @@ a, a:hover, a:visited{
 }
 
 .menu-item {
-  font-size: 20px;
+  font-size: 19px;
+  font-family: 'Roboto Light';
   line-height: 2em;
+  text-transform: lowercase;
+}
+
+.menu-item:hover {
+  transform: scale(1.08);
+  transition: transform 0.1s linear;
 }
 
 .profile-pic {
