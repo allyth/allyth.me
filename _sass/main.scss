@@ -49,6 +49,38 @@ h2.video::before {
   margin-right: 5px;
 }
 
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.side-menu .icons a>i.fa-linkedin {
+  animation: float 2s ease-in-out 2;
+  animation-delay: 1s;
+}
+
+.side-menu .icons a>i.fa-github {
+  animation: float 2s ease-in-out 2;
+  animation-delay: 1.5s;
+}
+
+.side-menu .icons a>i.fa-address-card {
+  animation: float 2s ease-in-out 2;
+  animation-delay: 2s;
+}
+
+.side-menu .icons a>i.fa-envelope {
+  animation: float 2s ease-in-out 2;
+  animation-delay: 2.5s;
+}
+
 .bs-tooltip-auto[x-placement^=top] .arrow::before,
 .bs-tooltip-bottom .arrow::before {
   border-bottom-color: #f00; /* Red */
