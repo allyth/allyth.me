@@ -204,8 +204,9 @@ span.ap-highlight-pink {
 
 .gallery li {
  flex: 1 1 20rem;
- min-height: 30vh;
- max-height: 30vh;
+ min-height: 15vw;
+ max-height: 15vw;
+ max-width: 15vw;
 }
 
 .gallery img {
