@@ -1,5 +1,6 @@
 $backgroundColor: #FBF7F4;
 $bodyColor: #000000;
+$menuIconColor: #fdd4ce;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 @font-face { font-family: Barcelony; src: url('/assets/fonts/barcelony/Barcelony.ttf'); } 
 @font-face { font-family: 'Roboto Light'; src: url('/assets/fonts/roboto/RobotoCondensed-Light.ttf'); } 
@@ -69,21 +70,30 @@ h2.video::before {
 .side-menu .icons a>i.fa-linkedin {
   animation: float 2s ease-in-out 2;
   animation-delay: 1s;
+  color: $menuIconColor;
 }
 
 .side-menu .icons a>i.fa-github {
   animation: float 2s ease-in-out 2;
   animation-delay: 1.5s;
+  color: $menuIconColor;
 }
 
 .side-menu .icons a>i.fa-address-card {
   animation: float 2s ease-in-out 2;
   animation-delay: 2s;
+  color: $menuIconColor;
 }
 
 .side-menu .icons a>i.fa-envelope {
   animation: float 2s ease-in-out 2;
   animation-delay: 2.5s;
+  color: $menuIconColor;
+}
+
+.side-menu .icons a>i:hover
+{
+    color:#ffffff;
 }
 
 .bs-tooltip-auto[x-placement^=top] .arrow::before,
@@ -290,4 +300,21 @@ span.ap-highlight-pink {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.rotate:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+.threed:hover
+{
+        box-shadow:
+                1px 1px #FCC4BC,
+                2px 2px #FCC4BC,
+                3px 3px #FCC4BC;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
 }
