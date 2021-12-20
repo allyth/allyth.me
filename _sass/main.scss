@@ -42,6 +42,11 @@ h2.video::before {
   margin-right: 0.7rem;
 }
 
+.side-menu .icons{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .side-menu .icons a{
   color:$backgroundColor;
   font-size: 30px;
@@ -175,7 +180,8 @@ a, a:hover, a:visited{
   font-size: 30px;
   line-height: 1.4em;
   color: #ffffff;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .divider {
@@ -218,6 +224,7 @@ a, a:hover, a:visited{
   width: 200px;
   height: 200px;
   margin-top: 30px;
+  margin-bottom: 15px;
   // transform: rotate(-15deg);
 }
 
