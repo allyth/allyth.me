@@ -67,27 +67,22 @@ h2.video::before {
   }
 }
 
-.side-menu .icons a>i.fa-linkedin {
-  animation: float 2s ease-in-out 2;
+.side-menu .icons a > i.fa-linkedin {
   animation-delay: 1s;
   color: $menuIconColor;
 }
 
-.side-menu .icons a>i.fa-github {
-  animation: float 2s ease-in-out 2;
+.side-menu .icons a > i.fa-github {
   animation-delay: 1.5s;
   color: $menuIconColor;
 }
 
-.side-menu .icons a>i.fa-address-card {
-  animation: float 2s ease-in-out 2;
+.side-menu .icons a > i.fa-address-card {
   animation-delay: 2s;
   color: $menuIconColor;
 }
 
-.side-menu .icons a>i.fa-envelope {
-  animation: float 2s ease-in-out 2;
-  animation-delay: 2.5s;
+.side-menu .icons a > i.fa-envelope {
   color: $menuIconColor;
 }
 
@@ -318,3 +313,25 @@ span.ap-highlight-pink {
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
+
+@keyframes pre-jump {
+  0% { transform:  scale(1, 1); }
+  50% { transform:  scale(1.25, 0.75); }
+}
+
+@keyframes post-jump {
+  0% { transform:  scale(1.25, 0.75); }
+  100% { transform:  scale(1, 1); }
+}
+
+@keyframes jump {
+  0% { transform:  scale(1, 1); }
+  30% { transform:  scale(1.25, 0.75); }
+  50% { transform: translate(-0%, -50%) scale(1, 1); }
+  55% { transform: translate(-0%, -50%) rotate(15deg); }
+  60% { transform: translate(-0%, -50%) rotate(-15deg); }
+  65% { transform: translate(-0%, -50%) rotate(15deg); }
+  70% { transform: translate(-0%, -50%) rotate(-15deg); }
+  100% { transform:  scale(1, 1); }
+}
+
