@@ -1,14 +1,14 @@
 <div class="side-menu">
     <img class="profile-pic" src="/assets/img/ally/ally.jpg" alt="Ally">
+    
     <a id="name" href="/">Maria Alexandra<br>Theodorescu</a>
-    <!-- <div class="divider"></div> -->
+
     <a class="menu-item" href="/about">About</a>
     <a class="menu-item" href="/resume">Resume</a>
     <a class="menu-item" href="/blog">Blog</a>
     <a class="menu-item" href="/visual-arts">Visual Arts</a>
     <a class="menu-item" href="/contact">Contact</a>
 
-    <!-- <div class="divider"></div> -->
 
     <div class="icons">
         <a data-content="LinkedIn" data-placement="top" href="https://www.linkedin.com/in/alexandra-theodorescu" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -24,8 +24,16 @@
         })
     </script>
 
-    <!-- <div class="dots">
-        <div class="divider circle"></div>
-        <div class="divider circle"></div>
-    </div> -->
+    <script>
+        function contactIconAnimation() {
+        $('.side-menu .icons a > i.fa-envelope')
+            .css('animation', 'none')
+            .outerHeight();
+        
+        $('.side-menu .icons a > i.fa-envelope')
+            .css('animation', 'jump 1.5s 3');
+        }
+        setTimeout(contactIconAnimation, 30000);
+        setTimeout(contactIconAnimation, 80000);
+    </script>
 </div>

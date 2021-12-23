@@ -335,3 +335,22 @@ span.ap-highlight-pink {
   100% { transform:  scale(1, 1); }
 }
 
+.instagram-post {
+   position: relative;
+   width: 100%;
+   padding-top: 160%;
+   margin-bottom: 10px;
+}
+
+.instagram-post > iframe {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  box-shadow: none;
+}
