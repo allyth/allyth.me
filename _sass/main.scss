@@ -1,6 +1,6 @@
-$backgroundColor: #FBF7F4;
+$backgroundColor: hsl(7, 36%, 95%);
 $bodyColor: #000000;
-$menuIconColor: #FBF7F4;
+$menuIconColor: #ffffff;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 @font-face { font-family: Barcelony; src: url('/assets/fonts/barcelony/Barcelony.ttf'); } 
 @font-face { font-family: 'Roboto Light'; src: url('/assets/fonts/roboto/RobotoCondensed-Light.ttf'); } 
@@ -21,7 +21,7 @@ body, html {
 h1, h2 {
   margin-bottom: 20px;
   margin-top: 20px;
-  color: #6B0F1A;
+  color: hsl(358, 40%, 30%);
   font-family: 'Roboto Regular';
 }
 
@@ -97,7 +97,7 @@ h2.video::before {
 }
 
 .navbar-mobile {
-  background-color: hsl(8, 60%, 73%);
+  background-color: hsl(358, 24%, 56%);
   position: sticky;
   top: 0;
   left: 0;
@@ -170,13 +170,17 @@ h2.video::before {
   text-align: center;
 }
 
-.side-menu a, .side-menu a:visited, .side-menu a:hover{
-  color: $backgroundColor;
+.side-menu a, .side-menu a:visited{
+  color: $menuIconColor;
   text-decoration: none;
 }
 
+.side-menu a:hover{
+  color:#ffffff;
+}
+
 a, a:hover, a:visited{
-  color: hsl(8, 66%, 45%);
+  color: #a26769;
   text-decoration: none;
 }
 
@@ -190,7 +194,7 @@ a, a:hover, a:visited{
 }
 
 .divider {
-  background-color: #E8998D;
+  background-color: #e6b3b6;
   height: 2px;
   width: 200px;
   border-radius: 100px;
@@ -234,7 +238,7 @@ a, a:hover, a:visited{
 }
 
 #page-content-container {
-  background-color: #FBF7F4;
+  background-color: #f7efee;
   flex-grow: 2;
   overflow-y: auto;
 }
@@ -244,7 +248,7 @@ a, a:hover, a:visited{
 }
 
 span.ap-highlight-pink {
-  background: linear-gradient(rgba(255,255,255,0) 65%,#fcc4bc 65%,#fcc4bc);
+  background: linear-gradient(rgba(255,255,255,0) 65%,#e8babd 65%,#e8babd);
 }
 
 .gallery {
@@ -307,9 +311,9 @@ span.ap-highlight-pink {
 .threed:hover
 {
         box-shadow:
-                1px 1px #FCC4BC,
-                2px 2px #FCC4BC,
-                3px 3px #FCC4BC;
+                1px 1px #e6b3b6,
+                2px 2px #e6b3b6,
+                3px 3px #e6b3b6;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
